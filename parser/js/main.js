@@ -64,7 +64,10 @@ $(function () {
 	
 	function ajaxLoaderStop() {
 		$preloader.fadeOut();
-		$buttonParse.removeAttr('disabled');
+		
+		setTimeout(() => {
+			$buttonParse.removeAttr('disabled')
+		}, 10000);
 	}
 	
 	//ajax fail function
